@@ -1,0 +1,26 @@
+apply plugin: 'scala'
+
+version = '1.0'
+
+ext {
+    scalaVersionMajor = "2.11"
+    scalaVersionMinor = "5"
+    sparkVersion = "1.4.0"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Scala
+    compile group: 'org.scala-lang', name: 'scala-library', version: scalaVersionMajor + '.' + scalaVersionMinor
+
+    // Spark libs
+    compile group: 'org.apache.spark', name: 'spark-core_' + scalaVersionMajor, version: sparkVersion
+    compile group: 'org.apache.spark', name: 'spark-sql_' + scalaVersionMajor, version: sparkVersion
+
+    // Test automation
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.scalatest', name: 'scalatest_' + scalaVersionMajor, version: '3.0.0-M4'
+}
