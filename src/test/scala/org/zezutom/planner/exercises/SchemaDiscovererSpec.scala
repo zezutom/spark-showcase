@@ -9,7 +9,7 @@ import org.scalatest.junit.JUnitRunner
 class SchemaDiscovererSpec  extends AppSpec with Matchers {
   "Schema of the provided JSON data set" should "be discovered" in {
     When("I ask for a schema")
-    val schema = SchemaDiscoverer.execute(repo)
+    val schema = new SchemaDiscoverer().execute(repo)
 
     Then("The schema should be discovered as expected")
     schema should equal(

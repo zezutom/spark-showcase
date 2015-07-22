@@ -8,7 +8,7 @@ import org.scalatest.junit.JUnitRunner
 class CaseOfficersFinderSpec extends AppSpec with Matchers {
   "All case officers" should "be listed in an alphabetical order" in {
     When("I ask for all case officers")
-    val officers = CaseOfficersFinder.execute(repo)
+    val officers = new CaseOfficersFinder().execute(repo)
     
     Then("The resulting list should be complete and sorted in alphabetical order")
     officers should equal(

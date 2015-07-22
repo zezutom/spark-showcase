@@ -8,7 +8,7 @@ import org.scalatest.junit.JUnitRunner
 class RecordCounterSpec extends AppSpec with Matchers {
   "Records of the provided JSON data set" should "be counted" in {
     When("I count records")
-    val count = RecordCounter.execute(repo)
+    val count = new RecordCounter().execute(repo)
     
     Then("The count should be as expected")
     count should equal(3)

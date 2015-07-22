@@ -1,6 +1,6 @@
 package org.zezutom.planner.exercises
 
-object CaseOfficersFinder extends DataTask[Array[String]] {
+class CaseOfficersFinder extends DataTask[Array[String]] {
 
   val fieldName = "CASEOFFICER"
 
