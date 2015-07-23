@@ -2,7 +2,7 @@
 
 ## Overview
  
-This demo analyses planning records from the following dataset:  
+This demo deals with analysis of the following dataset:  
 * [Dataset Overview](http://data.gov.uk/dataset/planning-applications-northumberland)
 * [The Actual Dataset](http://opendata.northumberland.gov.uk/static/datasets/planning-applications-weekly-list/planning-applications-weekly-list.json)
 
