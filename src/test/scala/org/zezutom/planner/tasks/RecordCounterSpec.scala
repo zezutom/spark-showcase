@@ -1,11 +1,10 @@
 package org.zezutom.planner.tasks
 
 import org.junit.runner.RunWith
-import org.scalatest.Matchers
 import org.scalatest.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
-class RecordCounterSpec extends AppSpec with Matchers {
+class RecordCounterSpec extends AppSpec {
   "Records of the provided JSON data set" should "be counted" in {
     Given("I execute RecordCounter task")
     val task = new RecordCounter().execute(repo)

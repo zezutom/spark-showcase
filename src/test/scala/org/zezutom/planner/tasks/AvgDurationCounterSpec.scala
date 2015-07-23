@@ -1,11 +1,10 @@
 package org.zezutom.planner.tasks
 
 import org.junit.runner.RunWith
-import org.scalatest.Matchers
 import org.scalatest.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
-class AvgDurationCounterSpec extends AppSpec with Matchers {
+class AvgDurationCounterSpec extends AppSpec {
   "Average consultation duration" should "be calculated" in {
     Given("I execute AvgDurationCounter task")
     val task = new AvgDurationCounter().execute(repo)

@@ -2,11 +2,10 @@ package org.zezutom.planner.tasks
 
 import org.apache.spark.sql.types.{StringType, StructField, StructType}
 import org.junit.runner.RunWith
-import org.scalatest.Matchers
 import org.scalatest.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
-class SchemaDiscovererSpec  extends AppSpec with Matchers {
+class SchemaDiscovererSpec  extends AppSpec {
   "Schema of the provided JSON data set" should "be discovered" in {
     Given("I execute SchemaDiscoverer task")
     val task = new SchemaDiscoverer().execute(repo)

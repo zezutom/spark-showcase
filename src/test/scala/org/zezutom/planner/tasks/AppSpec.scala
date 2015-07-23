@@ -2,9 +2,9 @@ package org.zezutom.planner.tasks
 
 import java.nio.file.Paths
 
-import org.scalatest.{GivenWhenThen, BeforeAndAfterEach, FlatSpec}
+import org.scalatest.{Matchers, GivenWhenThen, BeforeAndAfterEach, FlatSpec}
 
-trait AppSpec extends FlatSpec with BeforeAndAfterEach with GivenWhenThen with SparkSpec {
+trait AppSpec extends FlatSpec with BeforeAndAfterEach with GivenWhenThen with SparkSpec with Matchers {
 
   val jsonDS = Paths.get("src", "test", "resources", "dataset.json").toString
 

@@ -1,11 +1,10 @@
 package org.zezutom.planner.tasks
 
 import org.junit.runner.RunWith
-import org.scalatest.Matchers
 import org.scalatest.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
-class WordCounterSpec extends AppSpec with Matchers {
+class WordCounterSpec extends AppSpec  {
   "Words of the provided JSON data set" should "be counted" in {
     Given("I execute WordCounter task")
     val task = new WordCounter().execute(repo)

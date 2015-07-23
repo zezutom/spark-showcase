@@ -13,7 +13,7 @@ object PlannerApp {
 
   val sc = new SparkContext(conf)
 
-  val jsonDS = Paths.get("src", "test", "resources", "dataset.json").toString
+  val jsonDS = Paths.get("src", "main", "resources", "dataset.json").toString
 
   val repo:tasks.Repository = new tasks.Repository(sc, jsonDS)
 

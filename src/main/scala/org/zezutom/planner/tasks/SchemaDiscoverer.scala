@@ -9,5 +9,5 @@ class SchemaDiscoverer(val verbose: Boolean = true) extends DataTask[StructType]
     repo.dataFrame.schema
   }
 
-  override def asString(outcome: StructType): String = outcome.mkString("\n")
+  override def asString(outcome: StructType): String = outcome.prettyJson
 }
