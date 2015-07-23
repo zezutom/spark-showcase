@@ -13,7 +13,7 @@ data manipulation with big data. The dataset is small enough to be processed loc
 without the need for a distributed computing cluster.
 
 ## Developer Notes
-* The code is written using the [Scala 2.11.5](http://www.scala-lang.org/news/2.11.5) and [Apache Spark 1.4.0](http://spark.apache.org/releases/spark-release-1-4-0.html) 
+* The code is written using [Scala 2.11.5](http://www.scala-lang.org/news/2.11.5) and [Apache Spark 1.4.0](http://spark.apache.org/releases/spark-release-1-4-0.html) 
 * The code for each task is contained within its own class
 * All tasks can be run at once using [Planner App](https://github.com/zezutom/spark-showcase/blob/master/src/main/scala/org/zezutom/planner/PlannerApp.scala)
 * Task outcomes can be found [here](https://github.com/zezutom/spark-showcase/tree/master/src/main/resources/outcome)
