@@ -18,6 +18,7 @@ without the need for a distributed computing cluster.
 * All tasks can be run at once using [Planner App](https://github.com/zezutom/spark-showcase/blob/master/src/main/scala/org/zezutom/planner/PlannerApp.scala)
 * Task outcomes can be found [here](https://github.com/zezutom/spark-showcase/tree/master/src/main/resources/outcome)
 * Integration tests using [ScalaTest](http://scalatest.org) and [JUnit](http://junit.org)
+* The project is powered by [Gradle](http://gradle.org), `gradle test` runs the integrations tests
  
 ## Exercises & Questions
 1. Discover the schema of the input dataset.
