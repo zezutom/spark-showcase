@@ -26,3 +26,10 @@ without the need for a distributed computing cluster.
 4. Who are the top N agents (AGENT field) submitting the most number of applications? Allow N to be configurable.
 5. Count the occurrence of each word within the case text (CASETEXT field) across all planning application records.
 6. Measure the average public consultation duration in days (i.e. the difference between PUBLICCONSULTATIONENDDATE and PUBLICCONSULTATIONSTARTDATE fields).
+
+## Resources
+The following resources proved invaluable, big thanks to:
+* [Spark SQL and DataFrame Guide](http://spark.apache.org/docs/latest/sql-programming-guide.html)
+* [Spark Programming Guide: RDD Operations](http://spark.apache.org/docs/latest/programming-guide.html#rdd-operations)
+* [Spark Streaming Unit Testing](http://mkuthan.github.io/blog/2015/03/01/spark-unit-testing)
+* [Introduction to Spark Data Source API](http://blog.madhukaraphatak.com/introduction-to-spark-data-source-api-part-1)
