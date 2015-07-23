@@ -9,7 +9,7 @@ trait DataTask[T] extends Serializable {
 
   def outcome = _outcome
 
-  val outputPath = Paths.get("src", "main", "resources").toAbsolutePath.toString
+  val outputPath = Paths.get("src", "main", "resources", "outcome").toAbsolutePath.toString
 
   def execute(repo:Repository): DataTask[T] = {
     this._outcome = query(repo)
