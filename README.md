@@ -32,5 +32,5 @@ without the need for a distributed computing cluster.
 The following resources proved invaluable, big thanks to:
 * [Spark SQL and DataFrame Guide](http://spark.apache.org/docs/latest/sql-programming-guide.html)
 * [Spark Programming Guide: RDD Operations](http://spark.apache.org/docs/latest/programming-guide.html#rdd-operations)
-* [Spark Streaming Unit Testing](http://mkuthan.github.io/blog/2015/03/01/spark-unit-testing)
 * [Introduction to Spark Data Source API](http://blog.madhukaraphatak.com/introduction-to-spark-data-source-api-part-1)
+* [Spark Streaming Unit Testing](http://mkuthan.github.io/blog/2015/03/01/spark-unit-testing)
