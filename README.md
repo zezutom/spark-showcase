@@ -6,18 +6,17 @@ This demo analyses planning records from the following dataset:
 * [Dataset Overview](http://data.gov.uk/dataset/planning-applications-northumberland)
 * [The Actual Dataset](http://opendata.northumberland.gov.uk/static/datasets/planning-applications-weekly-list/planning-applications-weekly-list.json)
 
-## Developer Notes
-* The code is written using the Scala 2.11.5 and Apache Spark 1.4.0 
-* The code for each task is contained within its own class
-* All tasks can be run at once using [Planner App](https://github.com/zezutom/spark-showcase/blob/master/src/main/scala/org/zezutom/planner/PlannerApp.scala)
-* Task outcomes can be found [here](https://github.com/zezutom/spark-showcase/tree/master/src/main/resources/outcome)
- 
-## Input Data
 The dataset is a set of building planning application records 
 (i.e. applications submitted to request approval to construct / modify building structures) in JSON format. 
 This data has been selected based on its small size in order to take the emphasis of the challenge away from 
 data manipulation with big data. The dataset is small enough to be processed locally on a single machine 
 without the need for a distributed computing cluster.
+
+## Developer Notes
+* The code is written using the Scala 2.11.5 and Apache Spark 1.4.0 
+* The code for each task is contained within its own class
+* All tasks can be run at once using [Planner App](https://github.com/zezutom/spark-showcase/blob/master/src/main/scala/org/zezutom/planner/PlannerApp.scala)
+* Task outcomes can be found [here](https://github.com/zezutom/spark-showcase/tree/master/src/main/resources/outcome)
  
 ## Exercises & Questions
 1. Discover the schema of the input dataset.
